@@ -79,13 +79,29 @@ export const generatePDFWithBrowserPrint = () => {
       /* 헤더, 푸터 제거 */
       @page {
         margin: 0;
+        margin-top: 0.5cm;
         size: A4;
       }
       
-      html, body {
-        zoom: 90% !important;
+      @page:first{
+        margin-top: 0;
       }
       
+      html, body {
+        zoom: 89% !important;
+      }
+      
+      .pdf-only {
+        display: block !important;
+      }
+      
+      .hero{
+        padding-bottom: 1.2cm !important;
+      }
+      
+      .sidebar {
+        margin-top: -1.6cm !important;
+      }
       /* 불필요한 요소 숨김 */
       .fixed, .download-btn, nav {
         display: none !important;

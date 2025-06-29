@@ -9,7 +9,6 @@ import LeadingSection from '@components/sectiions/LeadingSection.tsx';
 import ImprovementSection from '@components/sectiions/ImprovementSection.tsx';
 import EducationSection from '@components/sectiions/EducationSection.tsx';
 import JobObjectiveSection from '@components/sectiions/JobObjectiveSection.tsx';
-import ContactSection from '@components/sectiions/ContactSection.tsx';
 import Navigation from '@components/Navigation.tsx';
 // import { usePDFExport } from '@shared/utils/selectivePdfFix.ts';
 // import { usePDFExport } from '@shared/utils/exportPdf.ts';
@@ -39,13 +38,14 @@ const Resume: React.FC = () => {
           <div className='content-grid'>
             {/* Sidebar */}
             <Sidebar />
-
+            <div className='pdf-only h-[430px] hidden'></div>
             {/* Main Content */}
             <main className='flex flex-col gap-12'>
               {/* Projects Section */}
               <ProjectSection />
               {/*// Part 3: 기술적 문제해결 경험 + 팀 리더십 + 현재 진행사항 // TSX에 추가할 부분*/}
               {/* 기술적 문제해결 경험 섹션 */}
+              <div className='pdf-only  h-[280px]' />
               <TrobleShootingSection />
               {/* 팀 리더십 & 기술 멘토링 섹션 */}
               <LeadingSection />
@@ -57,7 +57,7 @@ const Resume: React.FC = () => {
               {/* 희망 포지션 섹션 */}
               <JobObjectiveSection />
               {/* Contact CTA 섹션 */}
-              <ContactSection />
+              {/*<ContactSection />*/}
             </main>
           </div>
         </div>

@@ -207,7 +207,7 @@ html, body {
 	}
 
 	.sidebar {
-		@apply order-2;
+		@apply order-0;
 	}
 
 	.nav-menu {
@@ -526,4 +526,9 @@ img.loaded {
 	/* 강제 로딩 완료 대기 */
 	opacity: 1 !important;
 	visibility: visible !important;
+}
+
+.pdf-only {
+	/* PDF 생성 시만 적용된 스타일 */
+	display: none !important;
 }

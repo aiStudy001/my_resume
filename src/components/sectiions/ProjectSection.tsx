@@ -107,7 +107,8 @@ const ProjectSection: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* 다른 프로젝트들도 동일한 구조로 추가 */}
+        {/*<div className='pdf-only  h-[95px]' />*/}
+        {/* 다른 프로젝트들도 동일한 구조로 추0가 */}
         {/*// Part 2: 나머지 프로젝트들 + 기술 스킬 섹션 // TSX에 추가할 부분*/}
         {/* Nutrimate 프로젝트 */}
         <div className='project-card'>
@@ -215,6 +216,7 @@ const ProjectSection: React.FC = () => {
             </div>
           </div>
         </div>
+        {/*<div className='pdf-only  h-[140px]' />*/}
         {/* 여권의 정석 프로젝트 */}
         <div className='project-card'>
           <div className='bg-white p-8 border-b border-slate-200 relative'>
@@ -311,6 +313,7 @@ const ProjectSection: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className='pdf-only  h-[230px]' />
         {/* 기술 스킬 섹션 */}
         <section className='bg-white rounded-2xl p-10 shadow-md border border-slate-200'>
           <div className='mb-8'>
