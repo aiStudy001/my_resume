@@ -246,28 +246,28 @@ async function preloadAndConvertImages(): Promise<void> {
 }
 
 // 이미지를 Base64로 변환하는 함수 (필요시 사용)
-async function convertImageToBase64(img: HTMLImageElement): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
-
-    if (!ctx) {
-      reject(new Error('Canvas context not available'));
-      return;
-    }
-
-    canvas.width = img.naturalWidth;
-    canvas.height = img.naturalHeight;
-
-    try {
-      ctx.drawImage(img, 0, 0);
-      const base64 = canvas.toDataURL('image/png');
-      resolve(base64);
-    } catch (error) {
-      reject(error);
-    }
-  });
-}
+// async function convertImageToBase64(img: HTMLImageElement): Promise<string> {
+//   return new Promise((resolve, reject) => {
+//     const canvas = document.createElement('canvas');
+//     const ctx = canvas.getContext('2d');
+//
+//     if (!ctx) {
+//       reject(new Error('Canvas context not available'));
+//       return;
+//     }
+//
+//     canvas.width = img.naturalWidth;
+//     canvas.height = img.naturalHeight;
+//
+//     try {
+//       ctx.drawImage(img, 0, 0);
+//       const base64 = canvas.toDataURL('image/png');
+//       resolve(base64);
+//     } catch (error) {
+//       reject(error);
+//     }
+//   });
+// }
 
 // React Hook으로 사용
 export const useImageFixPDF = () => {
