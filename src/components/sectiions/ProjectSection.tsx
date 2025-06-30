@@ -99,6 +99,10 @@ const ProjectSection: React.FC = () => {
                 'MySQL',
                 'H2',
                 'jsPDF',
+                'html2Canvas',
+                'Jotai',
+                'Tanstack Query',
+                'Vite',
               ].map(tech => (
                 <span key={tech} className='tech-item'>
                   {tech}
@@ -114,7 +118,7 @@ const ProjectSection: React.FC = () => {
         <div className='project-card'>
           <div className='bg-white p-8 border-b border-slate-200 relative'>
             <span className='absolute top-4 right-4 bg-amber-500 text-white px-3 py-2 rounded-xl text-sm font-semibold'>
-              팀장
+              Team leader
             </span>
             <h3 className='text-2xl font-bold text-indigo-600 mb-2'>Nutrimate</h3>
             <p className='text-slate-600 mb-4'>건강관리 보조 서비스</p>
@@ -144,12 +148,14 @@ const ProjectSection: React.FC = () => {
             <div className='project-details'>
               <strong>💻 Backend 개발 총괄:</strong>
               <br />
-              • Spring Boot + Gradle 환경에서 log4jdbc 로깅 시스템 구축
+              • Spring Boot + Gradle 환경 초기 세팅: vite.config.js, .eslint.cjs, .prettier 등
+              개발환경 구성 (5-6시간 소요)
               <br />
-              • Jakarta 버전, JDBC 버전 호환성 문제 해결을 위한 라이브러리 의존성 관리
+              • log4jdbc 로깅 시스템 구축: Jakarta 버전, JDBC 버전 호환성 문제 해결을 위한
+              라이브러리 의존성 관리
               <br />
-              • OAuth 인증 시스템: Google, Facebook OAuth 구현 (팀원 담당이었으나 버그 수정까지
-              전담)
+              • OAuth 인증 시스템: Google, Facebook OAuth 구현 (Facebook 데시보드 이메일 권한 설정
+              등 복잡한 이슈 해결)
               <br />• 280줄 규모의 복잡한 SQL 쿼리 작성: 사용자 식단 기록의 칼로리, 영양소 데이터
               종합 분석
             </div>
@@ -160,7 +166,10 @@ const ProjectSection: React.FC = () => {
               • 무한 대댓글 시스템: 재귀함수를 활용한 무한 depth 댓글 구조 구현
               <br />
               • 애니메이션 메뉴 Drawer: 부드러운 애니메이션이 포함된 네비게이션 구현
-              <br />• 커스텀 캘린더: 라이브러리 기반 캘린더를 프로젝트 요구사항에 맞게 커스터마이징
+              <br />
+              • 커스텀 캘린더: 적합한 라이브러리 선정부터 프로젝트 요구사항에 맞는 커스터마이징까지
+              전담
+              <br />• dayjs, moment 등 라이브러리 중복 사용 이슈 관리 및 의존성 최적화
             </div>
 
             <div className='project-details'>
@@ -204,7 +213,8 @@ const ProjectSection: React.FC = () => {
                 'MyBatis',
                 'log4jdbc',
                 'JWT',
-                'Recoil',
+                'Jotai',
+                'Tanstack Query',
                 'Vite',
                 'Jira',
                 'Git',

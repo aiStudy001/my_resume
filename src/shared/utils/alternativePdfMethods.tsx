@@ -99,6 +99,15 @@ export const generatePDFWithBrowserPrint = () => {
         padding-bottom: 1.2cm !important;
       }
       
+      .hero-name, .hero-name * {
+        background: none !important;
+        background-image: none !important;
+        -webkit-background-clip: border-box !important;
+        -webkit-text-fill-color: white !important;
+        background-clip: border-box !important;
+        color: white !important;
+      }
+      
       .sidebar {
         margin-top: -1.6cm !important;
       }

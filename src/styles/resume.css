@@ -158,6 +158,14 @@ html, body {
 	@apply flex flex-wrap gap-2;
 }
 
+.skill-items-desktop {
+	@apply hidden lg:flex flex-wrap gap-2;
+}
+
+.skill-items-mobile {
+	@apply flex flex-wrap gap-2 lg:hidden;
+}
+
 .skill-tag {
 	@apply bg-slate-50 text-slate-800 px-3 py-2 rounded-full text-sm border border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all cursor-default;
 }
