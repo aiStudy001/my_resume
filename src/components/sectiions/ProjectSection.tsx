@@ -315,6 +315,10 @@ const ProjectSection: React.FC = () => {
                 'Python',
                 'Pillow',
                 'HuggingFace',
+                'tailwindcss',
+                'Vite',
+                'Jotai',
+                'Tanstack Query',
               ].map(tech => (
                 <span key={tech} className='tech-item'>
                   {tech}
