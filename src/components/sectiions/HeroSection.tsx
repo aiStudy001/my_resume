@@ -38,7 +38,8 @@ const HeroSection: React.FC = () => {
             다변량 절단정규분포 기법으로 실데이터 100개에서 5만개 합성데이터를 생성하고, LoRA
             파인튜닝된 LLaMA 3.2 3B 모델로 92% 정확도를 달성했습니다. LangGraph Multi-Agent
             워크플로우, VectorDB, React SPA, Spring Boot 마이크로서비스를 통합한 3-tier 아키텍처로
-            RunPod GPU 클러스터에 안정적인 AI 서비스를 배포한 경험을 보유하고 있습니다.
+            RunPod GPU 환경에서 파인튜닝된 LLaMA 3.2 3B 모델을 서빙하고 FastAPI를 통한 실시간 추론
+            API를 구축한 경험을 보유하고 있습니다.
           </p>
 
           <div className='flex gap-4 flex-wrap justify-center lg:justify-start'>

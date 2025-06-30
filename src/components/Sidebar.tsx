@@ -13,8 +13,9 @@ const Sidebar: React.FC = () => {
       <div className='sidebar-section' id='contact'>
         <h3 className='sidebar-title'>📞 연락처</h3>
         <div className='flex flex-col gap-4'>
-          <a href='mailto:jack1087902@gmail.com' className='contact-item'>
-            📧 jack1087902@gmail.com
+          <div className='contact-item'>📧 jack1087902@gmail.com</div>
+          <a href='tel:010-5745-7180' className='contact-item'>
+            📱 010-5745-7180
           </a>
           <a href='https://github.com/jaehak0' className='contact-item'>
             💻 GitHub <span className='pdf-only'>[https://github.com/jaehak0]</span>
